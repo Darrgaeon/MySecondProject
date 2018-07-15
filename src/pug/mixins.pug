@@ -1,0 +1,114 @@
+include ./mixins/typography
+
+mixin logo()
+    .logo
+        img(src="./image/logo.png")
+
+mixin menu()
+    .menu
+        ul
+            li
+                a(href="#") Home
+            li
+                a(href="#") Product
+            li
+                a(href="#") About
+            li
+                a(href="#") Library
+            li
+                a(href="#") Careers
+            li
+                a(href="#") Contact
+
+
+mixin info-title(description, title)
+    .description
+        span= description
+    h2.title= title
+
+
+mixin block-univers(title_info, text_info, text_comment, img_people, span_people)
+    .block-univers
+        .block-info
+            h3.title= title_info
+            p.text= text_info
+        .block-comment
+            .img-container
+                img(src="/image/section-2/twitter.png")
+            p.text= text_comment
+            .block-people
+                .container
+                    .row
+                        .container-img
+                            img(src= img_people)
+                        .description
+                            span= span_people
+
+
+mixin card(img, title, text)
+    .card
+        .container-img
+            img(src= img)
+        h3.title= title
+        p.text= text
+
+
+mixin block-left-info()
+    .block-left-info
+        .block-notes
+            img(src="/image/section-3/notes-1.png")
+            img(src="/image/section-3/notes-2.png")
+        .block-info-people
+            .block-people
+                .row
+                    .container-img
+                        img(src="/image/section-3/photo.png")
+                    .block-title
+                        .description
+                            span Employee
+                        h3.title Nicholas E. Tesla, PhD
+                        p.text Corporate R&D Electric Power Train Palo Alto,CA
+            .block-quality
+                +quality("automotives")
+                +quality("electronicmechanic")
+                +quality("direct current")
+                +quality("automotives")
+                +quality("power handling")
+                +quality("circuitry")
+                +quality("power inverter")
+                +quality("electric motors")
+                +quality("variable frequency")
+            .block-history
+                .description
+                    span See back side for project history
+
+
+mixin quality(text)
+    .button
+        a(href="#").item-button= text
+
+
+mixin slide(img, title, text)
+    .slide
+        .container-img
+            img(src= img)
+        h3.title= title
+        p.text= text
+        .button
+            a(href="#").item-button SEE THE USE-CASE
+
+
+mixin footer_button()
+    .footer_button
+        .button
+            a(href="#").item-button REQUEST DEMO
+        .button
+            a(href="#").item-button DOWNLOAD BROCHURE
+
+mixin footer_email()
+    .footer_email
+        .row
+            .email
+                input(type="email" placeholder="Email")
+            .button
+                a(href="#").item-button SUBSCRIBE

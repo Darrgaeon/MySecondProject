@@ -1,0 +1,63 @@
+@import "_functions"
+@import "_var"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	color: #333
+	font-family: $font-base
+	font-size: $font-size-base
+	line-height: _em(24px, $font-size-base)
+	min-width: 320px
+	overflow-x: hidden
+	position: relative
+
+.hidden
+	display: none
+
+// Custom styles here
+h1, h2, h3, h4, h5, h6, .button
+	font-family: "MyriadPro", sans-serif
+
+a, a:hover, a:active, a:link
+	text-decoration: none
+	color: inherit
+
+.item-button
+  display: block
+  background: $accent-color
+  color: #fff
+
+.owl-nav, .owl-dot, button
+  outline: 0 !important
+
+//
+//ALWAYS END
+@import  "blocks/_header.sass"
+@import  "blocks/_sect_2.sass"
+@import  "blocks/_sect_3.sass"
+@import  "blocks/_slider.sass"
+@import  "blocks/_demo.sass"
+@import  "blocks/_footer.sass"
+@import "_media.sass"

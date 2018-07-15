@@ -1,0 +1,138 @@
+//.example-desc
+//  margin: 3px 0
+//  padding: 5px
+//
+//#carousel
+//  width: 960px
+//  margin: 60px auto
+//  border: 1px solid #222
+//  height: 300px
+//  position: relative
+//  clear: both
+//  overflow: hidden
+//  background: #FFF
+//
+//#carousel img
+//  visibility: hidden; /* hide images until carousel can handle them */
+//  cursor: pointer; /* otherwise it's not as obvious items can be clicked */
+//
+//
+//.split-left
+//  width: 450px
+//  float: left
+//
+//.split-right
+//  width: 400px
+//  float: left
+//  margin-left: 10px
+//
+//#callback-output
+//  height: 250px
+//  overflow: scroll
+//
+//textarea#newoptions
+//  width: 430px
+//
+//.nav
+//  width: 80px; margin: 20px auto
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+.slider
+  background: #eff5f9
+  .slide-title
+    margin-top: 100px
+    font-family: "MyriadPro", sans-serif
+    text-align: center
+    .title
+      font-size: 24px
+      color: $main-color
+  .container-slide
+    margin-top: 40px
+    padding-bottom: 100px
+    .slide
+      background: #fff
+      width: 100%
+      text-align: center
+      font-family: "MyriadPro", sans-serif
+      box-shadow: rgba(208,208,208,.35) 0 2px 10px 7px
+      .container-img
+        padding-top: 35px
+        img
+          border-radius: 50%
+          border: 3px #f5f0f0 solid
+          width: 170px
+          height: 170px
+      .title
+        margin-top: 25px
+        font-size: 24px
+        color: #5d5d5d
+      .text
+        margin-top: 35px
+        padding: 0 45px
+        line-height: 28px
+        font-size: 16px
+        color: #7d7d7d
+      .button
+        display: inline-flex
+        padding-bottom: 30px
+        margin-top: 10px
+        .item-button
+          font-size: 14px
+          padding: 12px 30px
+  .col-md-4:nth-child(odd)
+    .slide
+      height: 420px
+      .title
+        margin-top: 20px
+        color: #46bcf8
+      .text
+        margin-top: 20px
+        font-size: 14px
+        margin-bottom: 5px
+        color: #9fa1a2
+      .button
+        .item-button
+          padding: 5px 30px
+  .col-md-4:nth-child(1)
+   .slide
+     position: relative
+     left: 200px
+  .col-md-4:nth-child(2)
+     z-index: 1
+  .col-md-4:nth-child(3)
+   .slide
+     position: relative
+     right: 200px
+  .owl-dots
+   position: relative
+   top: -60px
+   .owl-dot span
+     background: #d7d7d7
+     position: relative
+     width: 16px
+     height: 16px
+   .owl-dot.active span,
+   .owl-dot:hover span
+     background: $accent-color
+
+  .owl-theme .owl-nav [class*=owl-]:hover
+  background: none
+  color: $accent-color
+
+
+  // .owl-carousel .owl-item img
+  //  display: none
+

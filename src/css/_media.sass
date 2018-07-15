@@ -1,0 +1,173 @@
+@import "bourbon"
+@import "_functions"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.sect-2
+		.container-cards
+			.card
+				flex: 1 167px
+			.card:nth-child(even)
+				margin-right: 15px
+
+	.footer
+		.bottom-pannel-2
+			.row
+				.footer_button
+					.button
+						margin: 5px 10px 5px
+				.footer_email
+					.email
+						input
+							width: 200px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.sect-3
+		.block-univers
+			margin-top: 30px
+			padding-bottom: 100px
+			.block-comment
+				margin-top: 50px
+
+	.slider
+		.col-md-4:nth-child(1)
+			.slide
+				left: 150px
+		.col-md-4:nth-child(3)
+			.slide
+				right: 150px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.slider
+		.slide
+			margin: 10px 0
+			margin-right: 15px
+		.col-md-4:nth-child(odd)
+			.slide
+				left: 0
+				right: 0
+				height: 509px
+				.container-img
+					padding-top: 35px
+					img
+						border-radius: 50%
+				.title
+					margin-top: 25px
+					color: #5d5d5d
+				.text
+					margin: 35px 0 15px 0
+					padding: 0 45px
+					line-height: 28px
+					font-size: 16px
+					color: #7d7d7d
+				.button
+					display: inline-flex
+					padding-bottom: 30px
+					margin-top: 10px
+					.item-button
+						font-size: 14px
+						padding: 12px 30px
+
+
+	.footer
+		.bottom-pannel-1
+			.bottom-menu
+				margin-top: 30px
+				border: 2px solid $accent-color
+				padding: 0 15px
+				background: #fff
+		.bottom-pannel-2
+			.footer_email
+				margin-top: 20px
+		.footer-info
+			.container-icons
+				margin-top: 30px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.demo
+		.demo-title
+			margin: 50px 15px 0 0
+
+	.sect-3
+		.block-left-info
+			.block-notes
+				img
+					width: 140px
+				img:nth-child(2)
+					margin-top: 70px
+			.block-info-people
+				margin-right: 10px
+		.block-univers
+			margin-right: 10px
+
+	.footer
+		.bottom-pannel-2
+			.row
+				.footer_email
+					.email
+						input
+							width: 160px
+				.button
+					.item-button
+						margin-right: 25px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.sect-2
+		.block-univers
+			padding-right: 15px
+			text-align: center
+		.container-cards
+			.card, .card:nth-child(even)
+				margin-right: 30px
+
+
+	.slider
+		.col-md-4
+			.slide
+				margin: 10px 15px
+
+	.footer
+		.bottom-pannel-1
+			margin-right: 15px
+		.footer-info
+			.container-icons
+				margin-right: 15px
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

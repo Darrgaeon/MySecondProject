@@ -1,0 +1,25 @@
+header
+    .header
+        .container
+            .top-pannel
+                .row
+                    .col-2
+                        +logo
+                    .col-lg-6.col-md-7.ml-auto.d-none.d-md-block
+                        +menu
+
+                    .col-5.d-md-none.d-flex.ml-auto
+                        .mobile-menu-button
+                            span#navBtn(onClick="openNav()") &#9776; menu
+
+            .top-title
+                .row.justify-content-center
+                    .col-6
+                        +info-title("We organize expertise to make it universally", "visible, accessible and usable.")
+
+    .sect-cobrainer
+        .container
+            .row.justify-content-center
+                .col-6
+                    .cobrainer-title
+                        +info-title("Who in the organization has a certain set of know-how?", "COBRAINER GIVES YOU THE ANSWERS!")

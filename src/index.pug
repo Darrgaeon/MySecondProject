@@ -1,0 +1,38 @@
+include ./pug/mixins
+
+doctype html
+html(lang="EN")
+    head
+        block title
+            title Starter Template
+
+        block head_meta
+            include ./pug/head_meta
+
+        block head_custom_css
+            link(rel="stylesheet", href="./css/main.min.css")
+
+
+
+    body
+        .mobile-menu#mobileMenu
+            a(href="javascript:void(0)", onClick="closeNav()").closebtn &times;
+            a(href="#") Home
+            a(href="#") Product
+            a(href="#") About
+            a(href="#") Library
+            a(href="#") Careers
+            a(href="#") Contact
+
+
+
+        include ./pug/blocks/header
+        include ./pug/blocks/sect_2
+        include ./pug/blocks/sect_3
+        include ./pug/blocks/slider
+        include ./pug/blocks/demo
+        include ./pug/blocks/footer
+
+
+        include ./pug/scripts
+        include ./pug/ie_fix
