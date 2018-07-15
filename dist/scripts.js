@@ -15,7 +15,7 @@ function openNav() {
     navBtn.innerHTML = '&#9776; close';
 }
 
-//кнопка закрытия
+///кнопка закрытия
 function closeNav() {
     document.getElementById("mobileMenu").style.width = "0";
     // document.getElementById("container-main").style.marginLeft = "0";
